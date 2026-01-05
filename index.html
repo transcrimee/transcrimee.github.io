@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+<html class=" responsive DesktopUI" lang="en"  >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Steam Community :: transcrime</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://community.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=-yZgCk0Nu7kH&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/shared/css/buttons.css?v=0Ihq-pAoptBq&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/shared/css/shared_global.css?v=uKH1RcGNHaGr&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/css/globalv2.css?v=9RV1KkrS040q&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/css/skin_1/modalContent.css?v=WXAusLHclDIt&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/css/skin_1/profilev2.css?v=dYyxT1X4UndO&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=-yZgCk0Nu7kH&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/css/promo/summer2017/stickers.css?v=Ncr6N09yZIap&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/shared/css/shared_responsive.css?v=KWbVpwRCHuVv&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://community.fastly.steamstatic.com/public/css/skin_1/header.css?v=EM4kCu67DNda&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var __PrototypePreserve=[];
+	__PrototypePreserve[0] = Array.from;
+	__PrototypePreserve[1] = Array.prototype.filter;
+	__PrototypePreserve[2] = Array.prototype.flatMap;
+	__PrototypePreserve[3] = Array.prototype.find;
+	__PrototypePreserve[4] = Array.prototype.some;
+	__PrototypePreserve[5] = Function.prototype.bind;
+	__PrototypePreserve[6] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/prototype-1.7.js?v=npJElBnrEO6W&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">
+	Array.from = __PrototypePreserve[0] || Array.from;
+	Array.prototype.filter = __PrototypePreserve[1] || Array.prototype.filter;
+	Array.prototype.flatMap = __PrototypePreserve[2] || Array.prototype.flatMap;
+	Array.prototype.find = __PrototypePreserve[3] || Array.prototype.find;
+	Array.prototype.some = __PrototypePreserve[4] || Array.prototype.some;
+	Function.prototype.bind = __PrototypePreserve[5] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __PrototypePreserve[6] || HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript">
+	var __ScriptaculousPreserve=[];
+	__ScriptaculousPreserve[0] = Array.from;
+	__ScriptaculousPreserve[1] = Function.prototype.bind;
+	__ScriptaculousPreserve[2] = HTMLElement.prototype.scrollTo;
+</script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/scriptaculous/_combined.js?v=pbdAKOcDIgbC&amp;l=english&amp;_cdn=fastly&amp;load=effects,controls,slider,dragdrop"></script>
+<script type="text/javascript">
+	Array.from = __ScriptaculousPreserve[0] || Array.from;
+	Function.prototype.bind = __ScriptaculousPreserve[1] || Function.prototype.bind;
+	HTMLElement.prototype.scrollTo = __ScriptaculousPreserve[2] || HTMLElement.prototype.scrollTo;
+delete String['__parseStyleElement'];  Prototype.Browser.WebKit = true;</script>
+<script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/community.fastly.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/global.js?v=cMt-H-zOgNUp&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/jquery-1.11.1.min.js?v=gQHVlrK4-jX-&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/shared/javascript/tooltip.js?v=LZHsOVauqTrm&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/shared/javascript/shared_global.js?v=84qavQoecqcM&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/shared/javascript/auth_refresh.js?v=w6QbwI-5-j2S&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script><script type="text/javascript">$J = jQuery.noConflict();
+if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( "<scr" + "ipt type=\"text\/javascript\" src=\"https:\/\/community.fastly.steamstatic.com\/public\/javascript\/json2.js?v=54NKNglvGTO8&amp;l=english&amp;_cdn=fastly\"><\/script>\n" ); };
+</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				SetupTooltips( { tooltipCSSClass: 'community_tooltip'} );
+		});
+		</script><script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/modalContent.js?v=uqf5ttWTRe7l&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/modalv2.js?v=zBXEuexVQ0FZ&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/profile.js?v=kpuU5wNDRWQz&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/promo/stickers.js?v=CcLRHsa04otQ&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/reportedcontent.js?v=-lZqrarogJr8&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/webui/clientcom.js?v=Dt1ea51WVXey&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=j0eobCNqcadg&amp;l=english&amp;_cdn=fastly"></script>
+
+						<meta name="twitter:card" content="summary">
+					<meta name="Description" content="ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ">
+			
+	<meta name="twitter:site" content="@steam" />
+
+						<meta property="og:title" content="Steam Community :: transcrime">
+					<meta property="twitter:title" content="Steam Community :: transcrime">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:description" content="ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ">
+					<meta property="twitter:description" content="ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ">
+			
+	
+			<link rel="image_src" href="https://avatars.fastly.steamstatic.com/66cb329043bdeb95b50d568b6b57a1efdd38fef4_full.jpg">
+		<meta property="og:image" content="https://avatars.fastly.steamstatic.com/66cb329043bdeb95b50d568b6b57a1efdd38fef4_full.jpg">
+		<meta name="twitter:image" content="https://avatars.fastly.steamstatic.com/66cb329043bdeb95b50d568b6b57a1efdd38fef4_full.jpg" />
+				
+	
+	
+	
+	
+	</head>
+<body class="flat_page profile_page has_profile_background GameProfileTheme responsive_page ">
+
+
+<div class="responsive_page_frame with_header">
+						<div role="navigation" class="responsive_page_menu_ctn mainmenu" aria-label="Mobile Menu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<!-- profile area -->
+								<div class="responsive_menu_user_container">
+
+									<div class="responsive_menu_user_area">
+										<div class="responsive_menu_user_persona ">
+											<div class="playerAvatar persona offline">
+												<a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile">
+													<img src="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c_full.jpg" alt="𝙽𝚘𝚛𝚊 Ⅳ">												</a>
+											</div>
+											<div class="playerProfile_area">
+												<div class="persona offline"><a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile"><a href="https://steamcommunity.com/id/itsisnora/" data-miniprofile="874954971">𝙽𝚘𝚛𝚊 Ⅳ</a></a></div>
+												<div class="playerProfile_area_profilebtn"><a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile">View your profile</a></div>
+											</div>
+										</div>
+
+																															<div class="responsive_menu_cartwallet_area persona">
+												<div class="responsive_menu_cartwidget" data-featuretarget="shoppingcart-count-widget-responsive"></div>																									<div class="responsive_menu_user_wallet">
+														<a href="https://store.steampowered.com/account/">
+															Wallet (CDN$ 0.00)														</a>
+													</div>
+																							</div>
+																			</div>
+									<div class="responsive_menu_user_bg"><img src="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c.jpg" srcset="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c.jpg 1x, https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c_medium.jpg 2x" alt="𝙽𝚘𝚛𝚊 Ⅳ"></div>
+								</div>
+
+																									<div class="menuitem notifications_item">
+										Notifications										<div class="notification_count_total_ctn no_notifications">
+											<span class="notification_envelope"></span>
+											<span class="notification_count">0</span>
+										</div>
+									</div>
+									<div class="notification_submenu" style="display: none;" data-submenuid="notifications">
+										<div  data-featuretarget="green-envelope-responsive"></div>									</div>
+																<a class="menuitem supernav" href="https://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				
+										<a class="menuitem supernav username" href="https://steamcommunity.com/my/" data-tooltip-type="selector" data-tooltip-content=".submenu_Profile">
+				You &amp; Friends			</a>
+			<div class="submenu_Profile" style="display: none;" data-submenuid="Profile">
+														<a class="submenuitem" href="https://steamcommunity.com/my/home/">
+						Activity											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/">
+						Profile											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/friends/">
+						Friends											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/games/">
+						Games											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/groups/">
+						Groups											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/screenshots/">
+						Content											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/badges/">
+						Skills																						</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/inventory/">
+						Inventory											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/yearinreview/">
+						Steam Replay											</a>
+							</div>
+				
+						</div>
+						<div class="mainmenu_footer_spacer  "></div>
+						<div class="mainmenu_footer">
+															<div class="mainmenu_footer_logo"><img src="https://community.fastly.steamstatic.com/public/shared/images/responsive/footerLogo_valve_new.png"></div>
+								© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.								<span class="mainmenu_valve_links">
+									<a href="https://store.steampowered.com/privacy_agreement/" target="_blank">Privacy Policy</a>
+									&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+									&nbsp;| &nbsp;<a href="https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436" target="_blank">Accessibility</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/" target="_blank">Steam Subscriber Agreement</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/" target="_blank">Refunds</a>
+								</span>
+													</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;#filter_toggle&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="https://community.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+													<div class="responsive_header_notification_badge_ctn">
+								<div class="responsive_header_notification_badge notification_count_total_ctn no_notifications">
+									<span class="notification_count">0</span>
+								</div>
+							</div>
+											</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/">
+															<img src="https://community.fastly.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+													</a>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		
+			<div class="submenu_Profile" style="display: none;" data-submenuid="Profile">
+														<a class="submenuitem" href="https://steamcommunity.com/my/home/">
+						Activity											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/">
+						Profile											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/friends/">
+						Friends											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/games/">
+						Games											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/groups/">
+						Groups											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/screenshots/">
+						Content											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/badges/">
+						Skills																						</a>
+														<a class="submenuitem" href="https://steamcommunity.com/my/inventory/">
+						Inventory											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/yearinreview/">
+						Steam Replay											</a>
+							</div>
+			
+				</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		
+	
+</div>
+<script type="text/javascript">
+	g_sessionID = "73cca8637bb87f5afb9f8eca";
+	g_steamID = "76561198835220699";
+	g_strLanguage = "english";
+	g_SNR = '2_100300_profile_';
+	g_bAllowAppImpressions = true;
+		g_ContentDescriptorPreferences = [1,3,4];
+
+	
+
+	// We always want to have the timezone cookie set for PHP to use
+	setTimezoneCookies();
+
+	$J( function() {
+
+		InitMiniprofileHovers(( 'https%3A%2F%2Fsteamcommunity.com' ));
+		InitEmoticonHovers();
+		ApplyAdultContentPreferences();
+	});
+
+	$J( function() { InitEconomyHovers( "https:\/\/community.fastly.steamstatic.com\/public\/css\/skin_1\/economy.css?v=rbw2FTiaLS06&l=english&_cdn=fastly", "https:\/\/community.fastly.steamstatic.com\/public\/javascript\/economy_common.js?v=jDsAjsWNI2Ml&l=english&_cdn=fastly", "https:\/\/community.fastly.steamstatic.com\/public\/javascript\/economy.js?v=-xDRDFbYvVep&l=english&_cdn=fastly" );});</script>
+	<div id="webui_config" style="display: none;"
+		 data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;CA&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/&quot;,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/steamcommunity.com\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1767641804,&quot;PAGE_TIMESTAMP&quot;:1767641889,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Community&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_ASSETS_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;SNR&quot;:&quot;2_100300_profile_&quot;}"
+		 data-userinfo="{&quot;logged_in&quot;:true,&quot;country_code&quot;:&quot;CA&quot;,&quot;excluded_content_descriptors&quot;:[1,3,4],&quot;steamid&quot;:&quot;76561198835220699&quot;,&quot;accountid&quot;:874954971,&quot;account_name&quot;:&quot;happydance325&quot;,&quot;is_support&quot;:false,&quot;is_limited&quot;:false,&quot;is_partner_member&quot;:false,&quot;is_valve_email&quot;:false}">
+	</div>
+<script>window.g_wapit="eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxNF8yNzYzQTBBN19FOTk4QiIsICJzdWIiOiAiNzY1NjExOTg4MzUyMjA2OTkiLCAiYXVkIjogWyAid2ViOmNvbW11bml0eSIgXSwgImV4cCI6IDE3Njc3Mjg4NzMsICJuYmYiOiAxNzU5MDAxODg2LCAiaWF0IjogMTc2NzY0MTg4NiwgImp0aSI6ICIwMDE2XzI3NkI4RkJFXzA4RDU1IiwgIm9hdCI6IDE3NjU4MzUwOTMsICJydF9leHAiOiAxNzg0MTQxNjIxLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMzguMTc0LjE2LjIyMCIsICJpcF9jb25maXJtZXIiOiAiMzguMTc0LjE2LjIyMCIgfQ.BOcc2s9nUXMZcRDDlV31nsagdW45DCvEnInkyyrV50eOxfGaQl3nV_gvzsGvE3J99TxlNHknY-TzccATHT7fAA";</script><div id="application_config" style="display: none;"  data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;CA&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/&quot;,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/steamcommunity.com\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1767641804,&quot;PAGE_TIMESTAMP&quot;:1767641889,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Community&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_ASSETS_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;SNR&quot;:&quot;2_100300_profile_&quot;}" data-userinfo="{&quot;logged_in&quot;:true,&quot;country_code&quot;:&quot;CA&quot;,&quot;excluded_content_descriptors&quot;:[1,3,4],&quot;steamid&quot;:&quot;76561198835220699&quot;,&quot;accountid&quot;:874954971,&quot;account_name&quot;:&quot;happydance325&quot;,&quot;is_support&quot;:false,&quot;is_limited&quot;:false,&quot;is_partner_member&quot;:false,&quot;is_valve_email&quot;:false}" data-community="[]" data-loyaltystore="{&quot;webapi_token&quot;:&quot;eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxNF8yNzYzQTBBN19FOTk4QiIsICJzdWIiOiAiNzY1NjExOTg4MzUyMjA2OTkiLCAiYXVkIjogWyAid2ViOmNvbW11bml0eSIgXSwgImV4cCI6IDE3Njc3Mjg4NzMsICJuYmYiOiAxNzU5MDAxODg2LCAiaWF0IjogMTc2NzY0MTg4NiwgImp0aSI6ICIwMDE2XzI3NkI4RkJFXzA4RDU1IiwgIm9hdCI6IDE3NjU4MzUwOTMsICJydF9leHAiOiAxNzg0MTQxNjIxLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMzguMTc0LjE2LjIyMCIsICJpcF9jb25maXJtZXIiOiAiMzguMTc0LjE2LjIyMCIgfQ.BOcc2s9nUXMZcRDDlV31nsagdW45DCvEnInkyyrV50eOxfGaQl3nV_gvzsGvE3J99TxlNHknY-TzccATHT7fAA&quot;}" data-loyalty_webapi_token="&quot;eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxNF8yNzYzQTBBN19FOTk4QiIsICJzdWIiOiAiNzY1NjExOTg4MzUyMjA2OTkiLCAiYXVkIjogWyAid2ViOmNvbW11bml0eSIgXSwgImV4cCI6IDE3Njc3Mjg4NzMsICJuYmYiOiAxNzU5MDAxODg2LCAiaWF0IjogMTc2NzY0MTg4NiwgImp0aSI6ICIwMDE2XzI3NkI4RkJFXzA4RDU1IiwgIm9hdCI6IDE3NjU4MzUwOTMsICJydF9leHAiOiAxNzg0MTQxNjIxLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMzguMTc0LjE2LjIyMCIsICJpcF9jb25maXJtZXIiOiAiMzguMTc0LjE2LjIyMCIgfQ.BOcc2s9nUXMZcRDDlV31nsagdW45DCvEnInkyyrV50eOxfGaQl3nV_gvzsGvE3J99TxlNHknY-TzccATHT7fAA&quot;" data-steam_notifications="{&quot;pending_gift_count&quot;:0,&quot;pending_friend_count&quot;:0,&quot;unread_count&quot;:0,&quot;pending_family_invite_count&quot;:0,&quot;success&quot;:1,&quot;rwgrsn&quot;:-2}"></div><link href="https://community.fastly.steamstatic.com/public/css/applications/community/main.css?v=MeBANSrejeFc&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/applications/community/manifest.js?v=Ix2AScO-llKJ&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/applications/community/libraries~b28b7af69.js?v=otJTfeJA4u84&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://community.fastly.steamstatic.com/public/javascript/applications/community/main.js?v=RtuMtXLpxAVB&amp;l=english&amp;_cdn=fastly"></script>
+<div  data-featuretarget="profile-rewards"></div>	<div id="application_root"></div>
+
+		<div role="main" class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}" >
+
+				<script type="text/javascript">
+		g_rgProfileData = {"url":"https:\/\/steamcommunity.com\/id\/transcrime\/","steamid":"76561198067659609","personaname":"transcrime","summary":"ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ<br>"};
+		const g_bViewingOwnProfile = 0;
+		$J( function() {
+			window.Responsive_ReparentItemsInResponsiveMode && Responsive_ReparentItemsInResponsiveMode( '.responsive_groupfriends_element', $J('#responsive_groupfriends_element_ctn') );
+			
+			
+			SetupAnimateOnHoverImages();
+		});
+	</script>
+
+	<style>
+        body.GameProfileTheme {
+            --gradient-right: rgba(255, 255, 255, 0);
+            --gradient-left: rgba(255, 255, 255, 0);
+            --gradient-background: rgba(255, 255, 255, 0);
+            --gradient-background-right: rgba(255, 255, 255, 0);
+            --gradient-background-left: rgba(255, 255, 255, 0);
+            --color-showcase-header: rgba(255, 255, 255, 0);
+            --gradient-showcase-header-left:  rgba(255, 255, 255, 0);
+            --btn-background:rgba(0, 0, 0, .2);
+            --btn-background-hover:rgb(255, 255, 255, .1);
+            --btn-outline:rgb(255, 255, 255, .1);
+        }
+	</style>
+
+
+<div class="no_header profile_page has_profile_background  "
+	 style="background-image: url( 'https://shared.fastly.steamstatic.com/community_assets/images/items/346670/d0b91a9518e62e115159f5efcf62676000b93cf0.jpg' );">
+
+	
+	
+
+
+<div class="profile_header_bg">
+
+	<div class="profile_header_bg_texture">
+		
+		<div class="profile_header">
+
+			
+						
+			<div class="profile_header_content" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+
+				
+				<div class="playerAvatar profile_header_size offline" data-miniprofile="107393881">
+										<div class="playerAvatarAutoSizeInner">
+																				<picture>
+				<source media="(prefers-reduced-motion: reduce)" srcset="https://avatars.fastly.steamstatic.com/66cb329043bdeb95b50d568b6b57a1efdd38fef4_full.jpg"></source>
+				<img srcset="https://avatars.fastly.steamstatic.com/66cb329043bdeb95b50d568b6b57a1efdd38fef4_full.jpg" >
+			</picture>
+							</div>
+				</div>
+
+				<div class="profile_header_centered_col">
+					<div class="profile_header_centered_persona">
+						<div class="persona_name" style="font-size: 24px;">
+							<span class="actual_persona_name">transcrime</span>
+																						<span class="namehistory_link" onclick="ShowAliasPopup( this );">
+								<img id="getnamehistory_arrow" src="https://community.fastly.steamstatic.com/public/images/skin_1/arrowDn9x5.gif" width="9" height="5" border="0">
+							</span>
+														<div id="NamePopup" class="popup_block_new" style="display: none;">
+								<div class="popup_body popup_menu">
+									<div>This user has also played as:</div>
+									<div id="NamePopupAliases">
+
+									</div>
+									<div style="display:none" id="NamePopupClearAliases">
+																			</div>
+									<div style="clear:both"></div>
+								</div>
+							</div>
+						</div>
+													<div class="header_real_name ellipsis">
+								<bdi></bdi>
+																	<div class="header_location">
+																					<img class="profile_flag" src="https://community.fastly.steamstatic.com/public/images/countryflags/ca.gif">
+																				Nova Scotia, Canada									</div>
+															</div>
+											</div>
+						<div class="profile_header_summary desktop">
+						<div class="profile_summary">
+					ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ<br>				</div>
+				<div class="profile_summary_footer">
+					<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="whiteLink" class="whiteLink">View more info</span>
+				</div>
+						</div>
+				</div>
+
+					<div class="profile_header_summary mobile">
+						<div class="profile_summary">
+					ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ<br>				</div>
+				<div class="profile_summary_footer">
+					<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="whiteLink" class="whiteLink">View more info</span>
+				</div>
+						</div>
+
+				<div class="profile_header_badgeinfo" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
+											<div class="profile_header_badgeinfo_badge_area">
+															<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="persona_level_btn" href="https://steamcommunity.com/id/transcrime/badges">
+														<div class="persona_name persona_level">Level <div class="friendPlayerLevel lvl_100 lvl_plus_0"><span class="friendPlayerLevelNum">102</span></div></div>
+															</a>
+															<div class="profile_header_badge">
+																			<a href="https://steamcommunity.com/id/transcrime/gamecards/730" class="favorite_badge">
+											<div class="favorite_badge_icon" data-tooltip-html="Global Sentinel<br>
+Level 5 Counter-Strike 2 Badge">
+												<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/items/730/400f2cdf69db174f5616038edbb7a3f8e917ae00.png" class="badge_icon small">
+											</div>
+											<div class="favorite_badge_description">
+												<div class="name ellipsis">Global Sentinel</div>
+												<div class="xp">500 XP</div>
+											</div>
+										</a>
+																	</div>
+													</div>
+										<div class="profile_header_actions">
+																					<a class="btn_profile_action btn_medium" href="javascript:OpenFriendChat( '76561198067659609', 107393881 );">
+									<span>Message</span>
+								</a>
+														<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_profile_action btn_medium" id="profile_action_dropdown_link" onclick="ShowMenu( this, 'profile_action_dropdown', 'right' );">
+								<span>More... <img src="https://community.fastly.steamstatic.com/public/images/profile/profile_action_dropdown.png"></span>
+							</span>
+							<div class="popup_block" id="profile_action_dropdown" style="display: none;">
+								<div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div>								<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="popup_body popup_menu shadow_content">
+																			<a class="popup_menu_item" href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609' )">
+											<img src="https://community.fastly.steamstatic.com/public/shared/images/award_icon.svg" class="reward_btn_icon"/>&nbsp; <span>Give a Community Award</span>
+										</a>
+										<a class="popup_menu_item" href="https://store.steampowered.com/points/profile/76561198067659609?snr=2_100300_profile__points-shop-profile">
+											<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/assets/profile/equipped_items_icon.svg" id="view_equipped_items_icon" class="reward_btn_icon" />&nbsp; <span>View Equipped Point Shop Items</span>
+										</a>
+																		
+																														<a class="popup_menu_item" href="javascript:void(0);" onclick="PresentGroupInviteOptions();" ><img src="https://community.fastly.steamstatic.com/public/images/profile/icon_invitegroup.png">&nbsp; Invite to Join Your Group</a>
+																				<div class="profile_actions_follow">
+											<a style="" class="popup_menu_item follow_button" href="#" onclick="SetFollowing(true, function(bFollowing){ $J('.follow_button').hide(); $J('.unfollow_button').show();  }); HideMenu( 'profile_action_dropdown_link', 'profile_action_dropdown' ); return false;"><img src="https://community.fastly.steamstatic.com/public/images/sharedfiles/add_fav_ico_default.png">&nbsp; Follow</a>
+											<a style="display: none;" class="popup_menu_item unfollow_button" href="#" onclick="SetFollowing(false, function(bFollowing){ $J('.follow_button').show(); $J('.unfollow_button').hide();  }); HideMenu( 'profile_action_dropdown_link', 'profile_action_dropdown' ); return false;"><img src="https://community.fastly.steamstatic.com/public/images/sharedfiles/add_fav_ico_default.png">&nbsp; Stop Following</a>
+										</div>
+									
+																			<a class="popup_menu_item" href="#" onclick="ShowNicknameModal(); HideMenu( 'profile_action_dropdown_link', 'profile_action_dropdown' ); return false;"><img src="https://community.fastly.steamstatic.com/public/images/skin_1/notification_icon_edit_bright.png">&nbsp; Add Nickname</a>
+																																							<a class="popup_menu_item" href="#" onclick="StartTradeOffer( 107393881 ); HideMenu( 'profile_action_dropdown_link', 'profile_action_dropdown' ); return false;"><img src="https://community.fastly.steamstatic.com/public/images/profile/icon_tradeoffers.png">&nbsp; Offer a Trade...</a>
+																																						<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="popup_menu_item" href="javascript:ConfirmBlock();"><img src="https://community.fastly.steamstatic.com/public/images/profile/icon_block.png">&nbsp; Block All Communication</a>
+																												<a class="popup_menu_item" href="#" onclick="ReportProfile( '76561198067659609' ); HideMenu( 'profile_action_dropdown_link', 'profile_action_dropdown' ); return false;"><img src="https://community.fastly.steamstatic.com/public/images/skin_1/notification_icon_flag.png" style="margin: 0 1px;">&nbsp; Report Player</a>
+																												<a class="popup_menu_item" href="javascript:RemoveFriend();"><img src="https://community.fastly.steamstatic.com/public/images/profile/icon_unfriend.png">&nbsp; Unfriend</a>
+																																																					</div>
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript"> $J( function() { InitProfileSummary( g_rgProfileData['summary'] ); } ); </script>
+	</div>
+</div>
+
+	<div class="profile_content has_profile_background">
+		<div class="profile_content_inner">
+			
+			
+
+			
+			
+
+
+			<div class="profile_rightcol">
+				<div class="responsive_status_info">
+						<div class="profile_in_game persona offline">
+					<div class="profile_in_game_header">Currently Offline</div>
+							<div class="profile_in_game_name">Last Online 12 hrs, 24 mins ago</div>
+			</div>
+									</div>
+
+				<div class="responsive_count_link_area">
+					
+					
+					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_awards">
+						<div class="profile_count_link_preview_ctn" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
+																<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/awards/">
+							<span class="count_link_label">Achievements</span>&nbsp;
+							<span class="profile_count_link_total">
+																	4														</span>
+						</a>
+					</div>
+														<div class="profile_count_link_preview">
+																									<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Take My Points' award">
+										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 17 )">
+											<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png">
+										</a>
+									</div>
+																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Golden Unicorn' award">
+										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 11 )">
+											<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png">
+										</a>
+									</div>
+																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Clever' award">
+										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 13 )">
+											<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png">
+										</a>
+									</div>
+																										<div class="profile_badges_badge last" data-tooltip-html="This user's profile has been given the 'Mind Blown' award">
+										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 10 )">
+											<img src="https://github.com/drknzz/GitHub-Achievements/raw/main/Media/Badges/GitHub-Sponsor/PNG/GitHubSponsorBadge.png" class="award_icon small" data-animate-on-hover-src="https://github.com/drknzz/GitHub-Achievements/raw/main/Media/Badges/GitHub-Sponsor/PNG/GitHubSponsorBadge.png">
+										</a>
+									</div>
+																	<div style="clear: left;"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_badges">
+						<div class="profile_count_link_preview_ctn" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
+																<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/badges/">
+							<span class="count_link_label">Skills</span>&nbsp;
+							<span class="profile_count_link_total">
+																	140															</span>
+						</a>
+					</div>
+														<div class="profile_count_link_preview">
+																									<div class="profile_badges_badge "  data-tooltip-html="Steam Replay 2025&lt;br&gt;
+Awarded for viewing your 2025 Steam Replay." >
+										<a href="https://steamcommunity.com/id/transcrime/badges/69">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" class="badge_icon small">
+										</a>
+									</div>
+																										<div class="profile_badges_badge "  data-tooltip-html="Steam Awards Nomination Committee 2025&lt;br&gt;
+Completed all tasks" >
+										<a href="https://steamcommunity.com/id/transcrime/badges/70">
+											<img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" class="badge_icon small">
+										</a>
+									</div>
+																										<div class="profile_badges_badge "  data-tooltip-html="Sawmill Strongmann&lt;br&gt;
+Level 1 Team Fortress 2 Badge" >
+										<a href="https://steamcommunity.com/id/transcrime/gamecards/440">
+											<img src="https://cdn-icons-png.flaticon.com/512/6124/6124995.png" class="badge_icon small">
+										</a>
+									</div>
+																										<div class="profile_badges_badge last"  data-tooltip-html="Newbie&lt;br&gt;
+Level 1 Muse Dash Badge" >
+										<a href="https://steamcommunity.com/id/transcrime/gamecards/774171">
+											<img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="badge_icon small">
+										</a>
+									</div>
+																	<div style="clear: left;"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" id="responsive_groupfriends_element_ctn">
+					</div>
+
+					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_item_links">
+															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/games/?tab=all">
+							<span class="count_link_label">Projects</span>&nbsp;
+							<span class="profile_count_link_total">
+																	15															</span>
+						</a>
+					</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/inventory/">
+							<span class="count_link_label">Assets</span>&nbsp;
+							<span class="profile_count_link_total">
+																	&nbsp; <!-- so the line spaces like the rest -->
+															</span>
+						</a>
+					</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/screenshots/">
+							<span class="count_link_label">Blog</span>&nbsp;
+							<span class="profile_count_link_total">
+																	6															</span>
+						</a>
+					</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/videos/">
+							<span class="count_link_label">Videos</span>&nbsp;
+							<span class="profile_count_link_total">
+																	1															</span>
+						</a>
+					</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/myworkshopfiles/">
+							<span class="count_link_label">Workshop Items</span>&nbsp;
+							<span class="profile_count_link_total">
+																	3															</span>
+						</a>
+					</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/recommended/">
+							<span class="count_link_label">Year In Review</span>&nbsp;
+							<span class="profile_count_link_total">
+																	5															</span>
+						</a>
+					</div>
+																																			<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/images/">
+							<span class="count_link_label">Network</span>&nbsp;
+							<span class="profile_count_link_total">
+																	8															</span>
+						</a>
+					</div>
+																			<div style="clear: left;"></div>
+					</div>
+				</div>
+
+									<div class="profile_group_links profile_count_link_preview_ctn responsive_groupfriends_element" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
+															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
+						<a href="https://steamcommunity.com/id/transcrime/groups/">
+							<span class="count_link_label">Communities</span>&nbsp;
+							<span class="profile_count_link_total">
+																	9															</span>
+						</a>
+					</div>
+																				<div class="profile_in_common responsive_hidden">
+								You have <a class="whiteLink" href="https://steamcommunity.com/id/transcrime/groupscommon/">4 groups</a> in common							</div>
+												<div class="profile_count_link_preview">
+															<div class="profile_group profile_primary_group">
+									<div class="profile_group_avatar">
+										<a href="https://steamcommunity.com/groups/valvemaybe">
+											<img src="https://avatars.fastly.steamstatic.com/ee607822c772cdbe44c83609beade1871a97490d_medium.jpg">
+										</a>
+									</div>
+									<a class="whiteLink" href="https://steamcommunity.com/groups/valvemaybe">
+										ᐯalν​е									</a>
+									<div class="profile_group_membercount">2 Members</div>
+									<div style="clear: left;"></div>
+								</div>
+																															<div class="profile_group">
+										<div class="profile_group_avatar">
+											<a href="https://steamcommunity.com/groups/level100collector">
+												<img src="https://avatars.fastly.steamstatic.com/24c95b249b1cf9c2c5e31384c510a31cff397faa.jpg">
+											</a>
+										</div>
+										<a class="whiteLink" href="https://steamcommunity.com/groups/level100collector">
+											Level 100 Collector										</a>
+										<div class="profile_group_membercount">24,243 Members</div>
+										<div style="clear: left;"></div>
+									</div>
+																	<div class="profile_group">
+										<div class="profile_group_avatar">
+											<a href="https://steamcommunity.com/groups/femboy">
+												<img src="https://avatars.fastly.steamstatic.com/af53aad8a6f3400e1e2f6367d863a227a85fdf6f.jpg">
+											</a>
+										</div>
+										<a class="whiteLink" href="https://steamcommunity.com/groups/femboy">
+											Femboy										</a>
+										<div class="profile_group_membercount">21,435 Members</div>
+										<div style="clear: left;"></div>
+									</div>
+																					</div>
+					</div>
+				
+				
+			</div>
+
+
+			<div class="profile_leftcol">
+
+									<div class="profile_customization_area">
+												
+<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="profile_customization">
+	
+			<div class="profile_customization_header ellipsis">
+			𝐆𝐨𝐝 𝐥𝐨𝐯𝐞 𝐲𝐨𝐮 ♥︎		</div>
+		<div class="profile_customization_block">
+		<div class="customtext_showcase">
+			<div class="showcase_content_bg showcase_notes">
+									⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ☁<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    　𝚐𝚒𝚝_𝚐𝚞𝚒_𝚊𝚙𝚙.𝚙𝚢<br> <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⋰⠀／ｔｒａｎｓｃｒｉｍｅ⠀⋱<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀∵∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∵<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ━━━━━━━━━━━━━ sudo rm -rf / ━━━━━━<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀∵∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∵<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  <a class="bb_link" href="https://steamcommunity.com/" target="_blank" rel="" >＃ｔｒａｎｓ</a> 　<br>⠀⠀⠀⠀⠀ ↙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀┄┄┄┄┄┄┄┄┄┄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀⠀⠀⠀↘<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ❝⠀⠀⠀⠀⠀⠀⠀   　 𝚒 𝚑𝚊𝚝𝚎 𝚗𝚟𝚒𝚍𝚒𝚊 𝚞𝚜𝚎𝚛⠀⠀⠀⠀⠀⠀⠀❞<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀𝚞𝚜𝚎 𝚊𝚖𝚍<br>⠀⠀⠀⠀⠀ ↘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀↙<br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀ ━━━━⠀♀︎⠀━━━━<br> <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀     　 <a class="bb_link" href="https://steamcommunity.com/" target="_blank" rel="" >ｔｒａｎｓｃｒｉｍｅ</a> <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀       　　   <a class="bb_link" href="https://steamcommunity.com/" target="_blank" rel="" >トラン犯罪</a> <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   .ᵖʸ<br> <br> <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⌵⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ｇｏｏｄｂｙｅ. . .⠀⠀⠀⠀							</div>
+		</div>
+	</div>
+</div><div class="profile_customization">
+		<div class="profile_customization_header">Achievement Showcase</div>
+	<div class="profile_customization_block">
+		<div class="achievement_showcase">
+						<div class="showcase_content_bg">
+															<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+											<div class="showcase_slot showcase_achievement " data-tooltip-html="Achievement printer<br>
+ｅｒｒｏｒ <br>
+ｌｏａｄｉｎｇ．．． " >
+															<a href="https://steamcommunity.com/id/transcrime/stats/806140/achievements/">
+									<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/806140/d625ccf7b9d02d07d779fc440ed115ffb3c29b96.jpg">
+								</a>
+																				</div>
+													<div style="clear: left;"></div>
+			</div>
+			<div class="showcase_content_bg showcase_stats_row">
+				<div class="showcase_stat"  data-tooltip-text="3,510 achievements in 18 different games." >
+					<div class="value">3,510</div>
+					<div class="label">Achievements</div>
+				</div>
+									<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=perfect"  data-tooltip-text="Games where this player has gotten every achievement." >
+						<div class="value">4</div>
+						<div class="label">Perfect Games</div>
+					</a>
+								<div class="showcase_stat"  data-tooltip-text="The average percentage of achievements earned per game." >
+					<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=all&sort=achievements">
+						<div class="value">41%</div>
+						<div class="label">Avg. Game Completion Rate</div>
+					</a>
+				</div>
+				<div style="clear: left;"></div>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+</div>
+<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="profile_customization">
+		<div class="profile_customization_header">
+		Favorite Group	</div>
+	<div class="profile_customization_block">
+		<div class="favoritegroup_showcase">
+			<div class="showcase_content_bg">
+				<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="favoritegroup_showcase_group showcase_slot ">
+										<div class="favoritegroup_avatar">
+						<a href="https://steamcommunity.com/groups/level100collector">
+							<img src="https://avatars.fastly.steamstatic.com/24c95b249b1cf9c2c5e31384c510a31cff397faa_full.jpg">
+						</a>
+					</div>
+					<div class="favoritegroup_content">
+													<div class="favoritegroup_namerow ellipsis">
+								<a class="favoritegroup_name" href="https://steamcommunity.com/groups/level100collector">Level 100 Collector</a>
+															</div>
+							<div class="favoritegroup_description">
+								This group collects user with STEAM-Level 100 or higher.							</div>
+							<div class="favoritegroup_stats showcase_stats_row">
+								<div class="showcase_stat">
+									<div class="value">24,243</div>
+									<div class="label">Members</div>
+								</div>
+								<div class="showcase_stat favoritegroup_ingame">
+									<div class="value">2,351</div>
+									<div class="label">In-Game</div>
+								</div>
+								<div class="showcase_stat favoritegroup_online">
+									<div class="value">9,206</div>
+									<div class="label">Online</div>
+								</div>
+								<div class="showcase_stat favoritegroup_inchat" onclick="OpenGroupChat( '103582791434438407' )">
+									<div class="value">470</div>
+									<div class="label">In Chat</div>
+								</div>
+								<div style="clear: left;"></div>
+							</div>
+											</div>
+
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="profile_customization">
+		<div class="profile_customization_header">
+		GitHub Stats	</div>
+	<div class="profile_customization_block">
+		<div class="gamecollector_showcase">
+			<div class="showcase_content_bg showcase_stats_row">
+				<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=all">
+					<div class="value">35</div>
+					<div class="label">Commits</div>
+				</a>
+				<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=all">
+					<div class="value">10</div>
+					<div class="label">Pull Request</div>
+				</a>
+									<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/recommended/">
+						<div class="value">20</div>
+						<div class="label">Repositories</div>
+					</a>
+													<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/wishlist/">
+						<div class="value">15</div>
+						<div class="label">Follower</div>
+					</a>
+								<div style="clear: left;"></div>
+			</div>
+							<div class="showcase_bodylabel">
+					Featured Games				</div>
+				<div class="showcase_gamecollector_games" data-panel="{&quot;flow-children&quot;:&quot;grid&quot;,&quot;maintainY&quot;:true}" >
+											<div class="showcase_slot showcase_gamecollector_game  ">
+							<a href="https://steamcommunity.com/app/753">
+								<img class="game_capsule" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753/capsule_184x69.jpg?t=1576722337">
+							</a>
+													</div>
+											<div class="showcase_slot showcase_gamecollector_game  ">
+							<a href="https://steamcommunity.com/app/753">
+								<img class="game_capsule" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753/capsule_184x69.jpg?t=1576722337">
+							</a>
+													</div>
+											<div class="showcase_slot showcase_gamecollector_game  ">
+							<a href="https://steamcommunity.com/app/753">
+								<img class="game_capsule" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753/capsule_184x69.jpg?t=1576722337">
+							</a>
+													</div>
+											<div class="showcase_slot showcase_gamecollector_game  ">
+							<a href="https://steamcommunity.com/app/753">
+								<img class="game_capsule" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753/capsule_184x69.jpg?t=1576722337">
+							</a>
+													</div>
+										<div style="clear: left;"></div>
+				</div>
+					</div>
+		<div style="clear: both"></div>
+	</div>
+</div><div class="profile_customization myart">
+		<div class="profile_customization_header">Featured Artwork Showcase</div>
+
+	<div class="profile_customization_block">
+		<div class="screenshot_showcase">
+						<div class="screenshot_showcase_primary single showcase_slot " >
+									<a class="screenshot_showcase_screenshot modalContentLink ugc" data-appid="767" data-publishedfileid="3521222039" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3521222039">
+						<img style="max-width: 212px;" src="https://images.steamusercontent.com/ugc/10777211355710731867/2F7A2F07449D6F5AEDBD47425436D063C6C50559/?imw=212&imh=212&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+					</a>
+					<div class="screenshot_showcase_itemname">
+						󠀡󠀡　󠀡󠀡					</div>
+					<div class="screenshot_showcase_stats">
+																							</div>
+											</div>
+		</div>
+	</div>
+</div>
+
+
+
+			
+			
+				
+		
+
+		
+
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>
