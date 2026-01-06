@@ -5,9 +5,42 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="theme-color" content="#171a21">
-		<title>Steam Community :: transcrime</title>
+		<title class="title_main">transcrime.dev</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+	<script>
+const titles = ["transcrime.dev", "trans", "right", "human", "right"];
+let titleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
+function animateTitle() {
+  const currentFullText = titles[titleIndex];
+  
+  if (isDeleting) {
+    document.title = currentFullText.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    document.title = currentFullText.substring(0, charIndex + 1);
+    charIndex++;
+  }
+
+  let typeSpeed = isDeleting ? 100 : 200;
+
+  if (!isDeleting && charIndex === currentFullText.length) {
+    isDeleting = true;
+    typeSpeed = 2000; // Pause at the end
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    titleIndex = (titleIndex + 1) % titles.length;
+    typeSpeed = 500;
+  }
+
+  setTimeout(animateTitle, typeSpeed);
+}
+
+animateTitle();
+</script>
 	
 	
 	<link href="https://community.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=-yZgCk0Nu7kH&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
@@ -77,8 +110,8 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 			
 	<meta name="twitter:site" content="@steam" />
 
-						<meta property="og:title" content="Steam Community :: transcrime">
-					<meta property="twitter:title" content="Steam Community :: transcrime">
+						<meta property="og:title" content="transcrime.dev">
+					<meta property="twitter:title" content="transcrime.dev">
 					<meta property="og:type" content="website">
 					<meta property="fb:app_id" content="105386699540688">
 					<meta property="og:description" content="ｐｒｏｇｒａｍｍｅｒ ｓｏｃｋｓ ｏｎ ｔｏｐ">
@@ -105,24 +138,7 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 															<!-- profile area -->
 								<div class="responsive_menu_user_container">
 
-									<div class="responsive_menu_user_area">
-										<div class="responsive_menu_user_persona ">
-											<div class="playerAvatar persona offline">
-												<a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile">
-													<img src="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c_full.jpg" alt="𝙽𝚘𝚛𝚊 Ⅳ">												</a>
-											</div>
-											<div class="playerProfile_area">
-												<div class="persona offline"><a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile"><a href="https://steamcommunity.com/id/itsisnora/" data-miniprofile="874954971">𝙽𝚘𝚛𝚊 Ⅳ</a></a></div>
-												<div class="playerProfile_area_profilebtn"><a href="https://steamcommunity.com/id/itsisnora/" aria-label="View your profile">View your profile</a></div>
-											</div>
-										</div>
-
-																															<div class="responsive_menu_cartwallet_area persona">
-												<div class="responsive_menu_cartwidget" data-featuretarget="shoppingcart-count-widget-responsive"></div>																									<div class="responsive_menu_user_wallet">
-														<a href="https://store.steampowered.com/account/">
-															Wallet (CDN$ 0.00)														</a>
-													</div>
-																							</div>
+								</div>
 																			</div>
 									<div class="responsive_menu_user_bg"><img src="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c.jpg" srcset="https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c.jpg 1x, https://avatars.fastly.steamstatic.com/b7bed69b62cd2a842229cf71400087084e79e32c_medium.jpg 2x" alt="𝙽𝚘𝚛𝚊 Ⅳ"></div>
 								</div>
@@ -379,16 +395,16 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 				<div class="profile_header_badgeinfo" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
 											<div class="profile_header_badgeinfo_badge_area">
 															<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="persona_level_btn" href="https://steamcommunity.com/id/transcrime/badges">
-														<div class="persona_name persona_level">Level <div class="friendPlayerLevel lvl_100 lvl_plus_0"><span class="friendPlayerLevelNum">102</span></div></div>
+														<div class="persona_name persona_level">Level <div class="friendPlayerLevel lvl_900 lvl_plus_70"><span class="friendPlayerLevelNum">969</span></div></div>
 															</a>
 															<div class="profile_header_badge">
-																			<a href="https://steamcommunity.com/id/transcrime/gamecards/730" class="favorite_badge">
-											<div class="favorite_badge_icon" data-tooltip-html="Global Sentinel<br>
-Level 5 Counter-Strike 2 Badge">
-												<img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/items/730/400f2cdf69db174f5616038edbb7a3f8e917ae00.png" class="badge_icon small">
+																			<a href="https://store.steampowered.com/app/3569430/Catgirl" class="favorite_badge">
+											<div class="favorite_badge_icon" data-tooltip-html="Trans Right<br>
+Level 5 Egg Cracking">
+												<img src="https://www.publicdomainpictures.net/pictures/550000/velka/trans-pride-profile-frame.png" class="badge_icon small">
 											</div>
 											<div class="favorite_badge_description">
-												<div class="name ellipsis">Global Sentinel</div>
+												<div class="name ellipsis">Trans Right</div>
 												<div class="xp">500 XP</div>
 											</div>
 										</a>
@@ -454,30 +470,30 @@ Level 5 Counter-Strike 2 Badge">
 					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_awards">
 						<div class="profile_count_link_preview_ctn" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
 																<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/awards/">
+						<a href="https://github.com/transcrimee?tab=achievements">
 							<span class="count_link_label">Achievements</span>&nbsp;
 							<span class="profile_count_link_total">
 																	4														</span>
 						</a>
 					</div>
 														<div class="profile_count_link_preview">
-																									<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Take My Points' award">
-										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 17 )">
+																									<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'YoLo' award">
+										<a href="javascript:AddProfileAward( 1, 'https://github.com/transcrimee?tab=achievements', '76561198067659609', 17 )">
 											<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png">
 										</a>
 									</div>
-																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Golden Unicorn' award">
-										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 11 )">
+																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Quickdraw">
+										<a href="javascript:AddProfileAward( 1, 'https://github.com/transcrimee?tab=achievements', '76561198067659609', 11 )">
 											<img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png">
 										</a>
 									</div>
-																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Clever' award">
-										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 13 )">
+																										<div class="profile_badges_badge " data-tooltip-html="This user's profile has been given the 'Pull Shark' award">
+										<a href="javascript:AddProfileAward( 1, 'https://github.com/transcrimee?tab=achievements', '76561198067659609', 13 )">
 											<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" class="award_icon small" data-animate-on-hover-src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png">
 										</a>
 									</div>
-																										<div class="profile_badges_badge last" data-tooltip-html="This user's profile has been given the 'Mind Blown' award">
-										<a href="javascript:AddProfileAward( 1, 'https://steamcommunity.com/login/home/?goto=https%3A%2F%2Fsteamcommunity.com%2Fid%2Ftranscrime%2F%3FinsideModal%3D0', '76561198067659609', 10 )">
+																										<div class="profile_badges_badge last" data-tooltip-html="This user's profile has been given the 'Public Sponsor' award">
+										<a href="javascript:AddProfileAward( 1, 'https://github.com/transcrimee?tab=achievements', '76561198067659609', 10 )">
 											<img src="https://github.com/drknzz/GitHub-Achievements/raw/main/Media/Badges/GitHub-Sponsor/PNG/GitHubSponsorBadge.png" class="award_icon small" data-animate-on-hover-src="https://github.com/drknzz/GitHub-Achievements/raw/main/Media/Badges/GitHub-Sponsor/PNG/GitHubSponsorBadge.png">
 										</a>
 									</div>
@@ -489,34 +505,34 @@ Level 5 Counter-Strike 2 Badge">
 					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_badges">
 						<div class="profile_count_link_preview_ctn" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
 																<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/badges/">
+						<a href="#">
 							<span class="count_link_label">Skills</span>&nbsp;
 							<span class="profile_count_link_total">
 																	140															</span>
 						</a>
 					</div>
 														<div class="profile_count_link_preview">
-																									<div class="profile_badges_badge "  data-tooltip-html="Steam Replay 2025&lt;br&gt;
-Awarded for viewing your 2025 Steam Replay." >
-										<a href="https://steamcommunity.com/id/transcrime/badges/69">
+																									<div class="profile_badges_badge "  data-tooltip-html="The Python Corporation front&lt;br&gt;
+The black art of Python" >
+										<a href="https://www.python.org/">
 											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" class="badge_icon small">
 										</a>
 									</div>
-																										<div class="profile_badges_badge "  data-tooltip-html="Steam Awards Nomination Committee 2025&lt;br&gt;
-Completed all tasks" >
-										<a href="https://steamcommunity.com/id/transcrime/badges/70">
+																										<div class="profile_badges_badge "  data-tooltip-html="We Don't Talk About This&lt;br&gt;
+Completed java hell" >
+										<a href="https://www.oracle.com/java/technologies/downloads/">
 											<img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" class="badge_icon small">
 										</a>
 									</div>
-																										<div class="profile_badges_badge "  data-tooltip-html="Sawmill Strongmann&lt;br&gt;
-Level 1 Team Fortress 2 Badge" >
-										<a href="https://steamcommunity.com/id/transcrime/gamecards/440">
+																										<div class="profile_badges_badge "  data-tooltip-html="Level 5 Linus Torvalds&lt;br&gt;
+Linux is Completed Obtain the Thigh Highs " >
+										<a href="https://en.wikipedia.org/wiki/Linux">
 											<img src="https://cdn-icons-png.flaticon.com/512/6124/6124995.png" class="badge_icon small">
 										</a>
 									</div>
 																										<div class="profile_badges_badge last"  data-tooltip-html="Newbie&lt;br&gt;
-Level 1 Muse Dash Badge" >
-										<a href="https://steamcommunity.com/id/transcrime/gamecards/774171">
+Level 1 Web Design" >
+										<a href="https://en.wikipedia.org/wiki/HTML">
 											<img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="badge_icon small">
 										</a>
 									</div>
@@ -530,14 +546,14 @@ Level 1 Muse Dash Badge" >
 
 					<div data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" class="profile_item_links">
 															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/games/?tab=all">
+						<a href="https://github.com/transcrimee?tab=repositories">
 							<span class="count_link_label">Projects</span>&nbsp;
 							<span class="profile_count_link_total">
 																	15															</span>
 						</a>
 					</div>
 																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/inventory/">
+						<a href="#">
 							<span class="count_link_label">Assets</span>&nbsp;
 							<span class="profile_count_link_total">
 																	&nbsp; <!-- so the line spaces like the rest -->
@@ -545,35 +561,35 @@ Level 1 Muse Dash Badge" >
 						</a>
 					</div>
 																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/screenshots/">
+						<a href="https://bsky.app/profile/transcrime.bio">
 							<span class="count_link_label">Blog</span>&nbsp;
 							<span class="profile_count_link_total">
 																	6															</span>
 						</a>
 					</div>
 																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/videos/">
+						<a href="https://www.youtube.com/@transcrimee">
 							<span class="count_link_label">Videos</span>&nbsp;
 							<span class="profile_count_link_total">
 																	1															</span>
 						</a>
 					</div>
 																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/myworkshopfiles/">
-							<span class="count_link_label">Workshop Items</span>&nbsp;
+						<a href="#">
+							<span class="count_link_label">Artwork</span>&nbsp;
 							<span class="profile_count_link_total">
 																	3															</span>
 						</a>
 					</div>
 																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/recommended/">
+						<a href="#">
 							<span class="count_link_label">Year In Review</span>&nbsp;
 							<span class="profile_count_link_total">
 																	5															</span>
 						</a>
 					</div>
 																																			<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/images/">
+						<a href="#">
 							<span class="count_link_label">Network</span>&nbsp;
 							<span class="profile_count_link_total">
 																	8															</span>
@@ -585,14 +601,14 @@ Level 1 Muse Dash Badge" >
 
 									<div class="profile_group_links profile_count_link_preview_ctn responsive_groupfriends_element" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" >
 															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="profile_count_link ellipsis" >
-						<a href="https://steamcommunity.com/id/transcrime/groups/">
+						<a href="#">
 							<span class="count_link_label">Communities</span>&nbsp;
 							<span class="profile_count_link_total">
 																	9															</span>
 						</a>
 					</div>
 																				<div class="profile_in_common responsive_hidden">
-								You have <a class="whiteLink" href="https://steamcommunity.com/id/transcrime/groupscommon/">4 groups</a> in common							</div>
+															</div>
 												<div class="profile_count_link_preview">
 															<div class="profile_group profile_primary_group">
 									<div class="profile_group_avatar">
@@ -649,7 +665,7 @@ Level 1 Muse Dash Badge" >
 		</div>
 	</div>
 </div><div class="profile_customization">
-		<div class="profile_customization_header">Achievement Showcase</div>
+		<div class="profile_customization_header">Void Cube</div>
 	<div class="profile_customization_block">
 		<div class="achievement_showcase">
 						<div class="showcase_content_bg">
@@ -706,17 +722,17 @@ Level 1 Muse Dash Badge" >
 			</div>
 			<div class="showcase_content_bg showcase_stats_row">
 				<div class="showcase_stat"  data-tooltip-text="3,510 achievements in 18 different games." >
-					<div class="value">3,510</div>
-					<div class="label">Achievements</div>
+					<div class="value">15,510</div>
+					<div class="label">Void Cube in Storage</div>
 				</div>
 									<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=perfect"  data-tooltip-text="Games where this player has gotten every achievement." >
-						<div class="value">4</div>
-						<div class="label">Perfect Games</div>
+						<div class="value">1,690,420</div>
+						<div class="label">Void Cubes to Find</div>
 					</a>
 								<div class="showcase_stat"  data-tooltip-text="The average percentage of achievements earned per game." >
 					<a class="showcase_stat" href="https://steamcommunity.com/id/transcrime/games/?tab=all&sort=achievements">
-						<div class="value">41%</div>
-						<div class="label">Avg. Game Completion Rate</div>
+						<div class="value">67%</div>
+						<div class="label">Avg. Volatile Rate</div>
 					</a>
 				</div>
 				<div style="clear: left;"></div>
@@ -727,22 +743,22 @@ Level 1 Muse Dash Badge" >
 </div>
 <div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="profile_customization">
 		<div class="profile_customization_header">
-		Favorite Group	</div>
+		Favorite Communities	</div>
 	<div class="profile_customization_block">
 		<div class="favoritegroup_showcase">
 			<div class="showcase_content_bg">
 				<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="favoritegroup_showcase_group showcase_slot ">
 										<div class="favoritegroup_avatar">
 						<a href="https://steamcommunity.com/groups/level100collector">
-							<img src="https://avatars.fastly.steamstatic.com/24c95b249b1cf9c2c5e31384c510a31cff397faa_full.jpg">
+							<img src="https://i.pinimg.com/736x/e0/b9/78/e0b9783dc2c8a55f727f6fea093dd4ee.jpg">
 						</a>
 					</div>
 					<div class="favoritegroup_content">
 													<div class="favoritegroup_namerow ellipsis">
-								<a class="favoritegroup_name" href="https://steamcommunity.com/groups/level100collector">Level 100 Collector</a>
+								<a class="favoritegroup_name" href="https://steamcommunity.com/groups/level100collector">Cute</a>
 															</div>
 							<div class="favoritegroup_description">
-								This group collects user with STEAM-Level 100 or higher.							</div>
+								A Communities for those Cuties.							</div>
 							<div class="favoritegroup_stats showcase_stats_row">
 								<div class="showcase_stat">
 									<div class="value">24,243</div>
